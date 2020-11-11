@@ -1,0 +1,83 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  background: rgb(240, 141, 129);
+  background: radial-gradient(
+    circle,
+    rgba(240, 141, 129, 0.8799894957983193) 5%,
+    rgba(251, 213, 191, 1) 100%
+  );
+}
+
+.joinInnerContainer {
+  width: 20%;
+}
+
+.joinInput {
+  padding: 15px;
+  width: 100%;
+  border: 0;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.joinInput::placeholder {
+  color: lightgray;
+}
+.logo {
+  max-width: 350px;
+}
+
+.heading {
+  color: #fce0d4;
+  font-size: 2.5em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #fce0d4;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.button {
+  color: rgb(240, 141, 129) !important;
+  text-transform: uppercase;
+  background: #fce0d4;
+  padding: 20px;
+  display: inline-block;
+  border: none;
+  width: 100%;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+}
+button:focus {
+  outline: 0;
+}
